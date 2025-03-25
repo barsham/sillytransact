@@ -9,6 +9,7 @@ import Transactions from "./pages/Transactions";
 import Status from "./pages/Status";
 import Configuration from "./pages/Configuration";
 import NotFound from "./pages/NotFound";
+import TestHarness from "./pages/TestHarness";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/status" element={<Status />} />
           <Route path="/configuration" element={<Configuration />} />
+          <Route path="/test" element={<TestHarness />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
